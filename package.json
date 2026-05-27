@@ -14,5 +14,10 @@
     "typebox": "^1.1.38"
   },
   "author": "Fornace",
-  "license": "MIT"
+  "license": "MIT",
+  "pi": {
+    "extensions": [
+      "index.js"
+    ]
+  }
 }
