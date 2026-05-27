@@ -266,3 +266,17 @@ ${swarmResult.pages.map(p => `### Source: ${p.url}\n${p.text}`).join('\n\n...\n\
     },
   });
 }
+
+export default function(pi) {
+  const tool = createHyperSearchTool({
+    token: process.env.FC_AUTH_TOKEN,
+    fornaceHost: process.env.FORNACE_HOST || 'https://fornace.net',
+    serperApiKey: process.env.SERPER_API_KEY,
+    spiderApiKey: process.env.SPIDER_API_KEY,
+    openAiApiKey: process.env.OPENAI_API_KEY,
+    modelRegistry: pi.modelRegistry || pi.models // Try to pass available registry if exists
+  });
+  return {
+    tools: [tool]
+  };
+}
