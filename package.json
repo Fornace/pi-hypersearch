@@ -11,7 +11,7 @@
     "@earendil-works/pi-coding-agent": ">=0.75.0"
   },
   "dependencies": {
-    "typebox": "^0.32.0"
+    "typebox": "^1.1.38"
   },
   "author": "Fornace",
   "license": "MIT"
